@@ -111,6 +111,7 @@ class amazon_ses (
   $smtp_tls_ca_file    = $::amazon_ses::params::default_smtp_tls_ca_file,
   $smtpd_tls_cert_file = $::amazon_ses::params::default_smtpd_tls_cert_file,
   $smtpd_tls_key_file  = $::amazon_ses::params::default_smtpd_tls_key_file,
+  $mynetworks          = $::amazon_ses::params::default_mynetworks
 ) inherits ::amazon_ses::params {
 
   anchor { 'amazon_ses::begin': }

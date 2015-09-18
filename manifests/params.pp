@@ -43,4 +43,5 @@ class amazon_ses::params{
     default  => ['postfix', 'cyrus-sasl-plain'],
   }
 
+  $default_mynetworks = '127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128'
 }
